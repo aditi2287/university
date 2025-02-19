@@ -1,0 +1,262 @@
+/* index.css */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+      color: #213547;
+      background-color: #ffffff;
+  }
+  a:hover {
+      color: #747bff;
+  }
+  button {
+      background-color: #f9f9f9;
+  }
+}
+
+
+/* Styles for Applications Component (Add these) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.student-features {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.applications-section {
+  width: 100%;
+  text-align: center;
+}
+
+.applications-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.applications-section li {
+  margin-bottom: 10px;
+}
+
+/* Styles for Home Page (Add these) */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Ensure container takes full viewport height */
+  width: 100%; /* Or a specific width if you prefer */
+}
+
+.login-form {
+  width: 80%; /* Adjust as needed */
+  max-width: 400px; /* Example max width */
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  text-align: center; /* Center text within the form */
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Example blue color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form p {
+  margin-top: 10px;
+}
+
+.register-button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #e0a800;
+}
+
+
+/* index.css (or Register.css if you create a separate file) */
+
+/* ... other styles */
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Ensure container takes full viewport height */
+  width: 100%; /* Or a specific width if you prefer */
+}
+
+.register-form {
+  width: 80%; /* Adjust as needed */
+  max-width: 400px; /* Example max width */
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  text-align: center; /* Center text within the form */
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Example green color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #218838;
+}
+
+.register-form p {
+  margin-top: 10px;
+}
+
+.home-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
